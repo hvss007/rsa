@@ -1,0 +1,144 @@
+{
+    "pages": [
+     {
+      "name": "page1",
+      "elements": [
+       {
+        "type": "html",
+        "name": "question8",
+        "html": "6.1.1 Visibility; sight distance"
+       },
+       {
+        "type": "radiogroup",
+        "name": "question1",
+        "title": "Is sight distance adequate for the speed of traffic using the route?",
+        "isRequired": true,
+        "hasComment": true,
+        "choices": [
+         {
+          "value": "item1",
+          "text": "Yes"
+         },
+         {
+          "value": "item2",
+          "text": "NO"
+         }
+        ]
+       },
+       {
+        "type": "file",
+        "name": "question4",
+        "visibleIf": "{question1} notempty",
+        "title": "Upload image Related to first",
+        "maxSize": 0
+       },
+       {
+        "type": "radiogroup",
+        "name": "question3",
+        "title": "Is adequate sight distance provided for intersections and crossings? (for example, pedestrian, cyclist, cattle, railway)",
+        "hasComment": true,
+        "choices": [
+         {
+          "value": "item1",
+          "text": "Yes"
+         },
+         {
+          "value": "item2",
+          "text": "No"
+         }
+        ]
+       },
+       {
+        "type": "file",
+        "name": "question5",
+        "title": "Image",
+        "maxSize": 0
+       },
+       {
+        "type": "radiogroup",
+        "name": "question6",
+        "title": "Is adequate sight distance provided at all private driveways and property entrances?",
+        "hasComment": true,
+        "choices": [
+         {
+          "value": "item1",
+          "text": "Yes"
+         },
+         {
+          "value": "item2",
+          "text": "No"
+         }
+        ]
+       },
+       {
+        "type": "file",
+        "name": "question7",
+        "visibleIf": "{question5} notempty",
+        "title": "Image",
+        "maxSize": 0
+       }
+      ],
+      "title": "6.1 Road alignment and cross-section"
+     },
+     {
+      "name": "page2",
+      "elements": [
+       {
+        "type": "html",
+        "name": "question2",
+        "html": "6.1.2 Design speed"
+       },
+       {
+        "type": "radiogroup",
+        "name": "question9",
+        "title": "Is the horizontal and vertical alignment suitable for the (85th percentile) traffic speed?",
+        "hasComment": true,
+        "choices": [
+         {
+          "value": "item1",
+          "text": "Yes"
+         },
+         {
+          "value": "item2",
+          "text": "No"
+         }
+        ]
+       },
+       {
+        "type": "radiogroup",
+        "name": "question10",
+        "visibleIf": "{question9} = 'item2'",
+        "title": "If not",
+        "hasComment": true,
+        "choices": [
+         {
+          "value": "item1",
+          "text": "are warning signs installed?"
+         },
+         {
+          "value": "item2",
+          "text": "are advisory speed signs installed?"
+         }
+        ]
+       },
+       {
+        "type": "radiogroup",
+        "name": "question11",
+        "title": "Are the posted advisory speeds for curves appropriate?",
+        "hasComment": true,
+        "choices": [
+         {
+          "value": "item1",
+          "text": "Yes"
+         },
+         {
+          "value": "item2",
+          "text": "No"
+         }
+        ]
+       }
+      ],
+      "title": "6.1 Road alignment and cross-section"
+     }
+    ]
+   }
